@@ -1,1 +1,3 @@
-Readme for Rock Paper Scissors game
+I have coded Rock Paper Scissors game. It uses a simple command line interface (CLI) with ASCII graphics.
+The source code can be found in the file rps_game.py
+Demo of the game's working is in files Demo 1.png and Demo 2.png
