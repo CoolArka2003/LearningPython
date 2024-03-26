@@ -1,6 +1,7 @@
 import random
 from hangman_art import stages, logo
 from words_database import words_list
+from system import clear
 
 print(logo)
 print("\n\nWelcome to Hangman")
@@ -19,7 +20,7 @@ while True:
     hang_count=0
     while hang_count <= 6:
         g = input("Enter your guess ").lower()
-
+        clear()
         if g in guess:
             print(f"You have already guessed {g}")
         for i in range(len(word)):
@@ -50,6 +51,7 @@ while True:
             break
         print("invalid input.")
     if answer == 'y':
+        clear()
         continue
     else:
         print("Goodbye")
